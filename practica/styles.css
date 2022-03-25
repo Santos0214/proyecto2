@@ -1,0 +1,242 @@
+*{
+    margin: 2;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+
+}
+.center{
+    display: flex;
+    justify-content: 30px; 
+    align-items: center;
+    
+
+}
+.box{
+    width:450px ;
+    height: 350px;
+    background: rgba(0, 0, 0, 0.233);
+    border-radius: 20px;
+    box-shadow:0px 5px 16px 0px purple ;
+    
+}
+li{
+    color: darkgray;
+    width: 300px;
+    padding:15px;
+    background: darkslategray;
+    list-style: none;
+    margin: 12px;
+    cursor: pointer;
+    transition: all .4s;
+    position: relative;
+
+}
+li:hover{
+    transform: translate(20px);
+
+}
+li::before, li::after{
+    content: " ";
+    position: absolute;
+    background: rgb(255, 255, 255);
+    transition: all .4s;
+
+}
+li::before{
+    width: 20px;
+    height: 100%;
+    top: 0;
+    left: -30px ;
+
+}
+li::after{
+    width: 100px;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    color: rgb(255, 0, 0);
+
+    
+
+}
+li::hover::before, li:hover::after{
+    background: rgb(50, 205, 102);
+    box-shadow: 0 0 10px rgb(150, 127, 255);
+}
+body {
+    background-image: url(./img/R.jfif);
+    background-position: center center;
+    height: 800px;
+    
+    background-size: cover;
+    background-attachment: fixed;
+}
+header{
+    background-color: #f6e6f20e;
+}
+h1{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.328);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    border: 10px solid black;
+    border-radius: 15px;
+    
+}
+
+.zombra{
+    box-shadow:0px 5px 16px 0px yellowgreen ;
+}
+ul{
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+    
+}
+nav li{
+    
+    display: inline-flex;
+    
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    width: 150px;
+}
+div img{
+    width:270px ;
+    border-radius: 50px;
+}
+p{
+    color: white;
+    text-shadow: 1px 2px 2px blue;
+}
+label{
+    color: white;
+}
+ul li{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+}
+h3{
+    font-family: cursive;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 2px 2px black, 0 0 25px blue, 0 0 5px blue;
+}
+h2 div{
+    display: flex;
+    align-items: center;
+}
+.from-container{
+    background-color: black;
+    border-radius: 15px;
+    max-width: 100%;
+    min-width: 240px;
+    box-shadow: 0px 5px 16px 0px purple;
+    overflow: hidden;
+    color: white;
+    font-weight: 900;
+    margin: 0 10px;
+    margin-top: 70px;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+    display: block;
+    width: 400px;
+    padding: 5px;
+    margin: 5px;
+    font-size: 1rem;
+    border-radius: 1px solid wheat;
+    box-shadow: 0px 5px 16px 0px rgb(0, 109, 128);
+}
+.form-group *::placeholder{
+    color: rgba(255, 0, 136, 0.808);
+}
+select{
+    color:rgba(255, 0, 136, 0.808); ;
+}
+.from-check input[type="checkbox"]{
+    margin: 15px auto;
+}
+.button{
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: darkgray;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 15px;
+    text-transform: uppercase;
+    border-color: black;
+    
+    
+}
+button:hover{
+    background-color: purple;
+    color: white;
+    cursor: pointer;
+}
+.table-responsive{
+    width: 100%;
+    overflow-y:hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+th{
+    color: purple;
+    font-size: 20px;
+}
+table{
+    box-shadow:0px 5px 16px 0px rgb(0, 109, 128); 
+}
+.container{
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+.container .card{
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow:0px 5px 16px 0px rgb(0, 109, 128) ;
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+}
+.mercedez{
+    width: 300px;
+    padding: 15px;
+    box-shadow: 0px 5px 15px 0px purple;
+    border-radius: 15px;
+    float: left;
+    margin: 0 60px;
+    margin-top: 70px;
+    
+}
+ h3{
+    background-color: transparent;
+    width: 600px;
+    padding: 15px;
+    text-align: center;
+    text-shadow: #f1e876;
+}
+div h1{
+    text-shadow: 1px 2px 2px purple;
+}
+div h2{
+    text-shadow: 1px 2px 2px purple, 0 0 25px blue, 0 0 5pz blue;
+}
